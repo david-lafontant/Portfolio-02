@@ -9,7 +9,7 @@
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
 
-![screenshot](../images/mobile.png)
+![screenshot](images/mobile.png)
 
 Additional description about the project and its features.
 
