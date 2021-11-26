@@ -30,7 +30,8 @@ main {
   height: 85vh;
   top: 10vh;
 }
-nav > i {
+
+nav i {
   color: #6070ff;
 }
 
