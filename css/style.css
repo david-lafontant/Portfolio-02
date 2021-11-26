@@ -43,7 +43,7 @@ h1 {
 
 p {
   padding-top: 2vh;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -54,7 +54,7 @@ p {
 
 h3 {
   padding-top: 1.2em;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
