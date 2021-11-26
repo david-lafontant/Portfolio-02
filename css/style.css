@@ -78,9 +78,11 @@ section {
   width: 75px;
   height: 40px;
 }
+
 nav > i {
   color: #6070ff;
 }
+
 #media {
   display: flex;
 }
