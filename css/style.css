@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 header {
   width: 100vw;
   height: 10vh;
@@ -35,6 +30,7 @@ main {
   height: 85vh;
   top: 10vh;
 }
+
 h1 {
   padding-top: 15vh;
   font-family: Poppins, sans-serif;
@@ -44,6 +40,7 @@ h1 {
   color: #344563;
   width: 70%;
 }
+
 p {
   padding-top: 2vh;
   font-family: Poppins;
@@ -54,6 +51,7 @@ p {
   padding-right: 50px;
   text-align: justify;
 }
+
 h3 {
   padding-top: 1.2em;
   font-family: Poppins;
@@ -62,11 +60,13 @@ h3 {
   line-height: 24px;
   color: #7f8cff;
 }
+
 i {
   color: #505f79;
   font-size: 1.75em;
   margin-right: 0.5em;
 }
+
 section {
   padding-left: 1.1em;
 }
@@ -78,6 +78,7 @@ section {
   width: 75px;
   height: 40px;
 }
+
 #media {
   display: flex;
 }
