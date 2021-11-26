@@ -31,10 +31,6 @@ main {
   top: 10vh;
 }
 
-nav i {
-  color: #6070ff;
-}
-
 h1 {
   padding-top: 15vh;
   font-family: Poppins, sans-serif;
@@ -71,6 +67,11 @@ i {
   margin-right: 0.5em;
 }
 
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
 section {
   padding-left: 1.1em;
 }
@@ -88,7 +89,8 @@ section {
   display: flex;
 }
 
-ul {
-  display: flex;
-  list-style-type: none;
+#burger {
+  color: #6070ff;
 }
+
+
