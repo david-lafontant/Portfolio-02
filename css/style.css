@@ -30,6 +30,9 @@ main {
   height: 85vh;
   top: 10vh;
 }
+nav > i {
+  color: #6070ff;
+}
 
 h1 {
   padding-top: 15vh;
@@ -79,10 +82,12 @@ section {
   height: 40px;
 }
 
-nav > i {
-  color: #6070ff;
+#media {
+  margin-top: 0.88rem;
+  display: flex;
 }
 
-#media {
+ul {
   display: flex;
+  list-style-type: none;
 }
