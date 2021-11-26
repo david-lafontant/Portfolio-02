@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+}
+
+main {
+  position: relative;
+  background-image: url(../images/header_shapes_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+  top: 10vh;
+}
+
+h1 {
+  padding-top: 15vh;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #344563;
+  width: 70%;
+}
+
+p {
+  padding-top: 2vh;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-right: 50px;
+  text-align: justify;
+}
+
+h3 {
+  padding-top: 1.2em;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+i {
+  color: #505f79;
+  font-size: 1.75em;
+  margin-right: 0.5em;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+section {
+  padding-left: 1.1em;
+}
+
+#logo {
+  background-image: url(../images/my_logo2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 40px;
+}
+
+#media {
+  margin-top: 0.88rem;
+  display: flex;
+}
+
+#burger {
+  color: #6070ff;
+}
