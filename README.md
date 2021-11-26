@@ -20,6 +20,10 @@ Additional description about the project and its features.
 -Microverse html/css linter and markdown template
 -Google Chrome Mobile simulator extension - [responsive testing tool](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk/related)
 
+## Live Demo
+
+[Live Demo Link](https://david-lafontant.github.io/Portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
