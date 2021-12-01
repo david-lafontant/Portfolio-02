@@ -259,8 +259,8 @@
           </ul>
         </section>
       </section>
-      <section>
-        <section>
+      <section id="form_page">
+        <section #form_section1>
           <h1>Contact me</h1>
           <p>
             If you have an application you are interested in developing, a
@@ -270,31 +270,32 @@
         </section>
         <section>
           <form
-            form
-            class=""
-            action="https://formspree.io/f/meqnjrqo"
-            method="post"
+          id="form_element" 
+          action="https://formspree.io/f/meqnjrqo"
+          method="POST"
           >
             <label for="user_name"></label>
             <input
               type="text"
               name="user_name"
+              class="input_field text_input"
               placeholder="Please enter your name"
-              maxlength="10"
+              maxlength="30"
+
             />
 
             <label for="user_email"></label>
             <input
               type="email"
-              name="user_email"
+              name="_replyto"
+              class="input_field text_input"
               placeholder="Please enter your email"
-              id="user_email"
             />
 
-            <label for="msg"></label>
-            <textarea id="msg" name="user_message" maxlength="500"></textarea>
+            <label for="msg text_input"></label>
+            <textarea class="input_field text_input" id="msg" name="user_message" maxlength="500"></textarea>
 
-            <button>Get in touch</button>
+            <button id="form_button" class="myButton">Get in touch</button>
           </form>
         </section>
       </section>
