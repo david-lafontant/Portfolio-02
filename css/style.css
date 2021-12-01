@@ -323,13 +323,13 @@ section {
   color: #253858;
 }
 
-#form_page{
+#form_page {
   position: relative;
   display: grid;
   grid-template-columns: auto;
-  gap:2em;
+  gap: 2em;
   flex-wrap: wrap;
-  background-color:  #6070FF;
+  background-color: #6070ff;
   background-image: url(../images/contact_form_background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,26 +349,24 @@ section {
   -moz-border-radius-topright: 10px;
   border-top-left-radius: 50px;
   border-top-right-radius: 10px;
-
 }
 
+#form_page h1 {
+  position: relative;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
-  #form_page h1{
-    position:relative;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin:0;
-    padding:0;
-    width: 100%;
-    }
-
-#form_page section{
+#form_page section {
   position: relative;
   display: grid;
   grid-template-columns: auto;
@@ -376,49 +374,53 @@ section {
   padding: 0;
 }
 
-
-#form_page h1{
-font-family: Poppins;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
-margin:0;
-padding:0;
-width: 100%;
-margin-top: 3.5em;
-
+#form_page h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 3.5em;
 }
 
-#form_page p{
-font-family: Poppins;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
-margin: 0;
-padding: 0;
+#form_page p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin: 0;
+  padding: 0;
 }
 
 #form_element {
   position: relative;
   display: grid;
   grid-template-columns: auto;
-  gap:0.15em;
-
-
-
-  
+  gap: 0.15em;
 }
 
+.input_field {
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 0.5em 1.2em;
+  margin-bottom: 0.83em;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
 
-textarea{
+textarea {
   height: 10em;
 }
-
-
