@@ -158,6 +158,13 @@ section {
   color: #172b4d;
   margin-top: 1.1em;
   padding: 0;
+  animation-name: rainbow;
+  animation-duration: 12s;
+}
+
+@keyframes rainbow {
+  from {color: red;}
+  to {color: yellow;}
 }
 
 .card_ul1 {
