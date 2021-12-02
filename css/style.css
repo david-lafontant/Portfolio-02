@@ -353,14 +353,14 @@ section {
 
 #form_page h1 {
   position: relative;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -374,23 +374,8 @@ section {
   padding: 0;
 }
 
-#form_page h1 {
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  margin-top: 4em;
-}
-
 #form_page p {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -409,12 +394,12 @@ section {
 }
 
 .input_field {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 0.5em 1.2em;
   margin-bottom: 0.83em;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 17px;
   line-height: 20px;
