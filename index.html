@@ -281,6 +281,7 @@
               class="input_field text_input"
               placeholder="Please enter your name"
               maxlength="30"
+              required
 
             />
 
@@ -290,10 +291,12 @@
               name="_replyto"
               class="input_field text_input"
               placeholder="Please enter your email"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              required
             />
 
             <label for="msg text_input"></label>
-            <textarea class="input_field text_input" id="msg" name="user_message" maxlength="500"></textarea>
+            <textarea class="input_field text_input" id="msg" name="user_message" maxlength="500" required></textarea>
 
             <button id="form_button" class="myButton">Get in touch</button>
           </form>
