@@ -343,11 +343,11 @@ section {
   padding-left: 1.1em;
   padding-right: 1.1em;
   padding-top: 1.1em;
-  -webkit-border-top-left-radius: 50px;
+  -webkit-border-top-left-radius: 60px;
   -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topleft: 60px;
   -moz-border-radius-topright: 10px;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 60px;
   border-top-right-radius: 10px;
 }
 
@@ -386,7 +386,7 @@ section {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-top: 3.5em;
+  margin-top: 4em;
 }
 
 #form_page p {
@@ -403,8 +403,8 @@ section {
 
 #form_element {
   position: relative;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
   gap: 0.15em;
 }
 
