@@ -472,11 +472,42 @@ textarea {
   .home-page {
     display: flex;
     flex-direction: column;
+    text-align: center;
     padding-left: 18%;
     padding-right: 18%;
     align-items: center;
     background-image: url(../images/Home_desktop_background.svg);
-    height: 100vh;
+    height: 90vh;
+  }
+
+  .home-case-a {
+    grid-area: box-a;
+  }
+
+  .home-case-b {
+    grid-area: box-b;
+  }
+
+  .home-case-c {
+    grid-area: box-c;
+  }
+
+  .home-case-d {
+    grid-area: box-d;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.07fr 0.93fr;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "box-a"
+      "box-b" "box-c";
+    gap: 0.2em;
+  }
+
+  .intro-h3 {
+    text-align: left;
   }
 
   .about-page {
@@ -509,15 +540,6 @@ textarea {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
-  }
-
-  .intro-h3 {
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
   }
 
   .item-a {
@@ -578,5 +600,10 @@ textarea {
   .form-page-button {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .grid-pages:hover .myButton {
+    background: #6070ff;
+    color: #fff;
   }
 }
