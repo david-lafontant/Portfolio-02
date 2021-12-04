@@ -436,7 +436,7 @@ textarea {
     gap: 1em;
     list-style-type: none;
   }
- 
+
   .menu-link {
     font-family: Poppins, sans-serif;
     font-weight: 500;
@@ -453,9 +453,8 @@ textarea {
     align-items: center;
     background-image: url(../images/Home_desktop_background.svg);
     height: 100vh;
-    align-items: center;
   }
- 
+
   .about-page {
     width: 100%;
     padding-top: 20%;
@@ -463,7 +462,7 @@ textarea {
     padding-right: 10%;
     background-image: url(../images/contact_desktop_background.svg);
   }
- 
+
   .introduction {
     margin-top: initial;
   }
@@ -478,7 +477,7 @@ textarea {
     letter-spacing: 0.37px;
     color: #091e42;
   }
- 
+
   .intro-p {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -487,7 +486,7 @@ textarea {
     line-height: 28px;
     color: #344563;
   }
- 
+
   .intro-h3 {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -500,60 +499,60 @@ textarea {
   .item-a {
     grid-area: position-a;
   }
- 
+
   .item-b {
     grid-area: position-b;
   }
- 
+
   .grid-pages {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "position-a position-b";
   }
- 
+
   .card-details {
     padding-left: 2.2em;
     padding-right: 2.2em;
   }
- 
+
   .capabilities-list-1 {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 0.4em;
   }
- 
+
   .capabilities-languages {
     display: grid;
     grid-template-columns: auto;
   }
- 
+
   .form-page {
     padding-left: 30%;
     padding-right: 30%;
   }
- 
+
   .form-page-heading {
     color: white;
     width: 100%;
     text-align: center;
   }
- 
+
   .form-page-p {
     color: white;
     text-align: center;
   }
-  
+
   .form-element {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
-  
+
   .form-page-button {
     margin-left: auto;
     margin-right: auto;
-}
+  }
 }
