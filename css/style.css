@@ -38,7 +38,7 @@ header {
 .main-container {
   display: grid;
   grid-template-columns: auto;
-  gap:3em;
+  gap: 3em;
 }
 
 .home-page {
@@ -49,7 +49,7 @@ header {
   height: 90vh;
   width: 100%;
   background-color: #fff;
-  background-image: url(../images/header_shapes_mobile.svg);;
+  background-image: url(../images/header_shapes_mobile.svg);
   background-size: cover;
   overflow: hidden;
   padding-left: 1.1em;
@@ -285,6 +285,9 @@ header {
 }
 
 .capabilities-list-1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
   gap: 0.4em;
 }
 
@@ -410,3 +413,146 @@ textarea {
   background: #6070ff;
   color: #fff;
 }
+
+@media screen and (max-width: 991px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .burger {
+    display: none;
+  }
+
+  header {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+  }
+  
+  .menu-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 20px;
+    color: #344563;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18%;
+    padding-right: 18%;
+    align-items: center;
+    background-image: url(../images/Home_desktop_background.svg);
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .about-page {
+    width: 100%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(../images/contact_desktop_background.svg);
+  }
+  
+  .introduction {
+    margin-top: initial;
+  }
+  
+  .intro-heading {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    width: 35%;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+  
+  .intro-p {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+  
+  .intro-h3 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+  
+  .item-a {
+    grid-area: position-a;
+  }
+  
+  .item-b {
+    grid-area: position-b;
+  }
+  
+  .grid-pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "position-a position-b";
+  }
+  
+  .card-details {
+    padding-left: 2.2em;
+    padding-right: 2.2em;
+  }
+  
+  .capabilities-list-1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 0.4em;
+  }
+  
+  .capabilities-languages {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  
+  .form-page {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  .form-page-heading {
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-page-p {
+    color: white;
+    text-align: center;
+  }
+
+  .form-element {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .form-page-button{
+    margin-left: auto;
+    margin-right: auto;
+  }
+ }
