@@ -9,8 +9,15 @@
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
 
+## Mobile version
+
 ![screenshot](images/mobile.png)
 
+
+
+## Desktop version
+
+![screenshot](images/screenshot-desktop.png)
 Additional description about the project and its features.
 
 ## Built With
@@ -69,6 +76,7 @@ Give a ⭐️ if you like this project!
 - Hat tip also to my learning partner:
   @andres-condezo ANdres Condozo who help me handle Figma
   @Bondok6 Kyrillos Hany for his availability
+  @mukhammadrizooff for his hel with the animation
 
 ## 📝 License
 
