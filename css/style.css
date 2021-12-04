@@ -163,8 +163,12 @@ section {
 }
 
 @keyframes rainbow {
-  from {color: red;}
-  to {color: yellow;}
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
 }
 
 .card_ul1 {
