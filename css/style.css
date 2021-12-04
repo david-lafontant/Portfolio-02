@@ -38,6 +38,7 @@ header {
 .main-container {
   display: grid;
   grid-template-columns: auto;
+  gap:3em;
 }
 
 .home-page {
@@ -114,7 +115,6 @@ header {
   width: 92%;
   height: 80vh;
   top: 10vh;
-  margin-bottom: 5em;
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
