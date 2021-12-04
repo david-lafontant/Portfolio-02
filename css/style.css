@@ -74,7 +74,7 @@ header {
   font-family: Poppins, sans-serif;
   font-weight: 700;
   color: #344563;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-name: slidein;
 }
 
@@ -104,8 +104,19 @@ header {
   color: #344563;
   padding-right: 50px;
   text-align: justify;
+  animation-duration: 5s;
+  animation-name: slidein1;
 }
 
+@keyframes slidein1 {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
 .intro-h3 {
   padding-top: 1.2em;
   font-family: Poppins, sans-serif;
