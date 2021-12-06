@@ -2,12 +2,13 @@
 
 # Project Name
 
-> This project is done as part of the 3rd day activities. It is made in order to help the student masters
+> This project is done as part of the fist 3 weeks activities in Microverse. It is made in order to help the student masters:
 
 - How to parse a Figma design to create a UI.
-- Flexbox to place elements in the page.
+- Use Flexbox, Grid and Float to place elements in a page.
 - Build a personal portfolio site.
-- Use images and backgrounds to enhance the look of the website.
+- Use images, backgrounds and animations to enhance the look of the website.
+- How to deploy a website on Github Pages.
 
 ## Mobile version
 
@@ -40,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 Verify you install git (if not istall it)
-install a mobile simulator, like the Google Chrome extension: [Mobile Simulator - responsive testing tool](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk/related) or any equivalent.
+if you want visualize the mobile version on a desktop can can use a mobile simulator, like this Google Chrome extension: [Mobile Simulator - responsive testing tool](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk/related) or any equivalent.
 
 ### Setup
 
@@ -76,7 +77,7 @@ Give a ⭐️ if you like this project!
 - Hat tip also to my learning partner:
   @andres-condezo ANdres Condozo who help me handle Figma
   @Bondok6 Kyrillos Hany for his availability
-  @mukhammadrizooff for his hel with the animation
+  @mukhammadrizooff for his help with the animation
 
 ## 📝 License
 
