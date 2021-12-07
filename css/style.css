@@ -263,6 +263,7 @@ header {
 .myButton:hover {
   background: #2a3ce2;
   color: #fff;
+  font-size: 20px
 }
 
 .myButton:active {
