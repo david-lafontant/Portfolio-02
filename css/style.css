@@ -339,14 +339,15 @@ header {
 }
 
 .capabilities-anchor-2 {
-  background: #f7f7f9;
+  background: rgb(159, 159, 159);
+  padding: 5px 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
   color: #253858;
 }
@@ -603,6 +604,8 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     transition: background-color 500ms ease-out, color 500ms ease-out;
+
+
   }
 
   .grid-pages:hover .myButton {
