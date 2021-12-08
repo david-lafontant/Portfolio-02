@@ -118,7 +118,7 @@ header {
   }
 }
 
-.intro-h3 {
+.intro-h2 {
   padding-top: 1.2em;
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -263,6 +263,7 @@ header {
 .myButton:hover {
   background: #6070ff;
   color: #fff;
+  font-size: 20px;
 }
 
 .myButton:active {
@@ -338,14 +339,16 @@ header {
 }
 
 .capabilities-anchor-2 {
-  background: #f7f7f9;
+  background: rgb(238, 238, 238);
+  border: #000 solid thin;
+  padding: 5px 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
   font-family: Poppins, sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 20px;
   color: #253858;
 }
@@ -434,7 +437,8 @@ textarea {
 }
 
 .form-page-button:hover {
-  background: #6070ff;
+  background: #5467f4;
+  border: thin solid rgb(14, 14, 14);
   color: #fff;
 }
 
@@ -600,6 +604,7 @@ textarea {
   .form-page-button {
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 500ms ease-out, color 500ms ease-out;
   }
 
   .grid-pages:hover .myButton {
