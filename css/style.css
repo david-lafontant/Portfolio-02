@@ -339,14 +339,15 @@ header {
 }
 
 .capabilities-anchor-2 {
-  background: rgb(159, 159, 159);
+  background: rgb(238, 238, 238);
+  border: #000 solid thin;
   padding: 5px 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
   font-family: Poppins, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 20px;
   color: #253858;
