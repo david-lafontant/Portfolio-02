@@ -605,8 +605,6 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     transition: background-color 500ms ease-out, color 500ms ease-out;
-
-
   }
 
   .grid-pages:hover .myButton {
