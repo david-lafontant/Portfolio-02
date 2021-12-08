@@ -436,7 +436,7 @@ textarea {
 
 .form-page-button:hover {
   background: #2a3ce2;
-  border-color: blue;
+  border: thin solid blue;
   color: #fff;
 }
 
