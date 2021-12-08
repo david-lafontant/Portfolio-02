@@ -435,8 +435,8 @@ textarea {
 }
 
 .form-page-button:hover {
-  background: #2a3ce2;
-  border: thin solid blue;
+  background: #5467f4;
+  border: thin solid rgb(14, 14, 14);
   color: #fff;
 }
 
@@ -602,6 +602,7 @@ textarea {
   .form-page-button {
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 500ms ease-out, color 500ms ease-out;
   }
 
   .grid-pages:hover .myButton {
