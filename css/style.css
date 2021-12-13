@@ -439,15 +439,17 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
+
   nav .menu {
     display: none;
     height:100vh;
     position:fixed;
     flex-direction: column;
+    z-index:10;
     top:0;
     right: 0;
     left:0;
-    transition: top 2s ease;
+    /*transition: top 2s ease;*/
 
   }
 
@@ -461,21 +463,6 @@ textarea {
   nav .burger{
     display: block;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
