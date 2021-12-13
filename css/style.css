@@ -439,14 +439,55 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
-  .menu {
+  nav .menu {
     display: none;
+    height:100vh;
+    position:fixed;
+    flex-direction: column;
+    top:0;
+    right: 0;
+    left:0;
+    transition: top 2s ease;
+
   }
+
+  nav .menu .close{
+    display:block;
+    position:absolute;
+    top:1rem;
+    right:1rem;
+  }
+
+  nav .burger{
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media screen and (min-width: 992px) {
   .burger {
     display: none;
+
+  }
+
+  .close{
+    display:none;
   }
 
   header {
