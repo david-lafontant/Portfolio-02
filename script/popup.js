@@ -16,8 +16,8 @@ document.body.appendChild(popup);
 const style = document.createElement('style');
 style.innerHTML = `
     .note {
-        background-color: yellow;
-        color:red;
+        background-color: white;
+        color: black;
         width: 90vw;
         height: 123vh;
         position: fixed;
@@ -26,6 +26,7 @@ style.innerHTML = `
         margin: 5vw;
         border-radius: 20px;
         text-align: center;
+        border: solid black
     }
     `;
 document.head.appendChild(style);
