@@ -17,5 +17,3 @@ function showNavbar(){
 function hideNavbar(){
   menu.style.top = "-100%";
 }
-
-console.log(menuLinks);
