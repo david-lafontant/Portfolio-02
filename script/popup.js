@@ -7,6 +7,17 @@ function showProject() {
     popup.style.top = "0";
 };
 
+
+
+
+
+
+
+
+
+
+
+
 let popup = document.createElement('div');
 popup.id = 'project-popup';
 popup.className = 'note'
