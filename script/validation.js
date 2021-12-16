@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // Show a message with a type of the input
 function showMessage(input, message, type) {
     // Get the small element and set the message
@@ -5,7 +6,9 @@ function showMessage(input, message, type) {
 
     msg.innerText = message;
     // Update the class for the input
-    input.className = type ? "success" : "error";
+    input.className = type
+? "success"
+: "error";
 
      return type;
 }
@@ -32,7 +35,8 @@ function validateEmail(input, requiredMsg, invalidMsg) {
         return false;
     }
     // Validate email format
-    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+    const emailRegex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
     const email = input.value.trim();
 
