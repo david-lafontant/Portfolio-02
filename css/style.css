@@ -445,6 +445,7 @@ small{
   color:red;
   margin-bottom: 1.5em;
 }
+
 @media screen and (max-width: 991px) {
   nav .menu {
     display: none;
