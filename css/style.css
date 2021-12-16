@@ -432,6 +432,7 @@ header {
 textarea {
   height: 10em;
 }
+
 .form-page-button{
   margin-bottom: 0.5rem;
 }
@@ -441,8 +442,8 @@ textarea {
   color: #fff;
 }
 
-small{
-  color:red;
+small {
+  color: red;
   margin-bottom: 1.5em;
 }
 
