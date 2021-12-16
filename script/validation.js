@@ -39,7 +39,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     }
     // Validate email format
     const emailRegex =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
     const email = input.value.trim();
 
@@ -60,7 +60,7 @@ const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format - lowercase required";
 
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', event => {
     // Stop form submission
     event.preventDefault();
 
@@ -70,6 +70,7 @@ form.addEventListener('submit', function (event) {
     // If valid, submit the form.
 
     if (nameValid && emailValid) {
-      this.submit();
+    console.log('form event submit')
+      form.submit();
     }
   });
