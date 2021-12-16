@@ -5,13 +5,16 @@ function showMessage(input, message, type) {
     const msg = input.parentNode.querySelector("small");
 
     msg.innerText = message;
-    // Update the class for the input
-    input.className = type
-? "success"
-: "error";
+if (type) {
+    input.className = "success";
+} else {
+    input.className = "error";
+}
+
 
      return type;
 }
+
 
 function showError(input, message) {
     return showMessage(input, message, false);
