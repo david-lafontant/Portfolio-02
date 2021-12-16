@@ -7,7 +7,7 @@ function showMessage(input, message, type) {
     // Update the class for the input
     input.className = type ? "success" : "error";
 
-    return type;
+     return type;
 }
 
 function showError(input, message) {
