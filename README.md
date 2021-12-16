@@ -9,6 +9,9 @@
 - Build a personal portfolio site.
 - Use images, backgrounds and animations to enhance the look of the website.
 - How to deploy a website on Github Pages.
+- Add accebility feature
+- Create form
+- validate form with Javascript
 
 ## Mobile version
 
@@ -78,6 +81,8 @@ Give a ⭐️ if you like this project!
   @andres-condezo ANdres Condozo who help me handle Figma
   @Bondok6 Kyrillos Hany for his availability
   @mukhammadrizooff for his help with the animation
+  @sumairq for his help
+  @eduardosancho for all his contribution during the fourth week of th first module
 
 ## 📝 License
 
