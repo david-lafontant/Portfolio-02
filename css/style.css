@@ -432,12 +432,19 @@ header {
 textarea {
   height: 10em;
 }
+.form-page-button{
+  margin-bottom: 0.5rem;
+}
 
 .form-page-button:hover {
   background: #6070ff;
   color: #fff;
 }
 
+small{
+  color:red;
+  margin-bottom: 1.5em;
+}
 @media screen and (max-width: 991px) {
   nav .menu {
     display: none;
