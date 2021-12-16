@@ -7,7 +7,7 @@ function showMessage(input, message, type) {
     // Update the class for the input
     input.className = type ? "success" : "error";
 
-return type;
+    return type;
 }
 
 function showError(input, message) {
@@ -32,24 +32,28 @@ function validateEmail(input, requiredMsg, invalidMsg) {
         return false;
     }
     // Validate email format
-    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
     const email = input.value.trim();
 
     if (!emailRegex.test(email)) {
         return showError(input, invalidMsg);
+
+
     }
+
 
 return true;
 }
 
-const form = document.querySelector("#form");
+const form = document.querySelector("form");
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format";
+const EMAIL_INVALID = "Please enter a correct email address format - lowercase required";
 
-form.addEventListener("submit", event => {
+
+form.addEventListener('submit', function (event) {
     // Stop form submission
     event.preventDefault();
 
@@ -59,7 +63,6 @@ form.addEventListener("submit", event => {
     // If valid, submit the form.
 
     if (nameValid && emailValid) {
-        this submit()
-        alert("Invalid entries. Form not submitted");
+      this.submit();
     }
-});
+  });
