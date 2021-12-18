@@ -129,7 +129,8 @@ style.innerHTML = `
         display:flex;
     flex-direction:column;
     gap:0.5rem;
-    padding-left:3.5%;
+    padding-left:4%;
+    padding-right:4%;
     }
 
     .p1 i{
@@ -156,6 +157,7 @@ style.innerHTML = `
         height: 39.8%;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom:3rem;
     }
 
     #modalPage #lp{
@@ -164,6 +166,7 @@ style.innerHTML = `
 
     #modalPage #bp{
         text-align:justify;
+        padding-right:1.1rem;
     }
 
     #modalPage #card-detail-2{
@@ -185,6 +188,7 @@ style.innerHTML = `
 #modalPage #card-detail-2 .cardUl2{
     display:flex;
     justify-content: flex-start;
+    gap:1.1rem;
 }
 
       .flexButton{
