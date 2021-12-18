@@ -108,7 +108,7 @@ ${webLanguages[num]}
 `;
 function closePopup(){
   const closed = document.querySelector('.closePopup');
-  closed.addEventListener('click', async () => {
+  closed.addEventListener('click', async ()=> {
     window.location.reload();
   });
 }
@@ -173,7 +173,6 @@ style.innerHTML = `
         position:relative;
 
     }
-
     #modalPage #card-detail-2 #bp{
         float:left;
         width:50%;
