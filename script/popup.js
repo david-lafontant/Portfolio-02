@@ -20,7 +20,7 @@ remaining essent
 </p>`;
 
 
-const paragraph2 =`<p class="cardP sec-a" id="bp">
+const paragraph2 = `<p class="cardP sec-a" id="bp">
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
 totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
 dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
@@ -44,13 +44,15 @@ const myImages = document.getElementsByClassName('responsiveImg');
 const imageContent = [];
 
 for (let num = 0; num < myHeadings.length; num += 1){
-  const item = `<h2 class="cardH2 cardH2modal" id="h2Modal">${myHeadings[num].textContent}</h2>`;
+  const item = `<h2 class="cardH2 cardH2modal" id="
+  h2Modal">${myHeadings[num].textContent}</h2>`;
 
   headingContent.push(item);
 }
 
 for (let num = 0; num < myImages.length; num += 1){
-  const item = `<img src=${myImages[num].src} class="responsiveImg" alt="project image">`;
+  const item = `<img src=${myImages[num].src} 
+  class="responsiveImg" alt="project image">`;
 
   imageContent.push(item);
 }
@@ -72,8 +74,8 @@ for (let num = 0; num < myCanopy.length; num += 1){
 "theHead": headingContent[num],
 "theCanopy": canopy[num],
 "theImage": imageContent[num],
-"sourceLink" : sources,
-"lieLink" : lives,
+"sourceLink": sources,
+"lieLink": lives
   };
 
 popup.push(item);
@@ -106,20 +108,26 @@ ${webLanguages[num]}
 </section>
 <script src="script/popup.js"></script>
 `;
+
 function closePopup(){
   const closed = document.querySelector('.closePopup');
-  closed.addEventListener('click', async() => {
-    window.location.reload();
-  });
+
+  closed.addEventListener('click', async);
+
+}
+
+
+function async(){
+  window.location.reload();
+
 }
 // eslint-disable-next-line no-plusplus
-for (let i = 0; i < projectBtn.length; i++) {
-  projectBtn[i].addEventListener('click', () => {
-    document.body.innerHTML = popupTemplate(i);
+for (let num = 0; num < projectBtn.length; num += 1) {
+  projectBtn[num].addEventListener('click', () => {
+    document.body.innerHTML = popupTemplate(num);
     closePopup();
   });
 }
-
 
 
 style.innerHTML = `
@@ -203,20 +211,7 @@ style.innerHTML = `
         }
     
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 @media screen and (max-width: 991px) {
     
@@ -255,7 +250,6 @@ style.innerHTML = `
         margin-top: 0.5rem;
         padding: 0;
     }
-
 	
 	#otherTechno {display: none;}
     #bp{display:none;}
@@ -278,27 +272,9 @@ style.innerHTML = `
     }
 
     }
-
-  
-   
+ 
 
 `;
 
 
 document.head.appendChild(style);
-
-style2.innerHTML =`
-
-
-
-
-
-
-`
-
-
-
-
-;
-
-document.head.appendChild(style2);
