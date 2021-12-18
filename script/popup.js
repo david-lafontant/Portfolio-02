@@ -35,7 +35,11 @@ consectetur, adipisci velit, sed quia non numquam eius
 modi tempora incidunt ut labore et dolore 
 magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
  </p>`;
-
+const webtech = `<ul id="otherTechno" class="cardUl2 sec-c">
+<li class="card-li">Github</li>
+<li class="card-li">Ruby</li>
+<li class="card-li">Bootstrap</li>
+</ul>`;
 const sources = "https://github.com/david-lafontant/Portfolio";
 const lives = "https://david-lafontant.github.io/Portfolio/";
 
@@ -101,11 +105,7 @@ ${popup[num].theImage}
 ${paragraph}
 ${paragraph2}
 ${webLanguages[num]}
-<ul id="otherTechno" class="cardUl2 sec-c">
-<li class="card-li">Github</li>
-<li class="card-li">Ruby</li>
-<li class="card-li">Bootstrap</li>
-</ul>
+${webtech};
   <div class="flexButton sec-d">
     <a class="myButton modalButton"
      href =" ${lives}" target="_blank"><span>See Live 
@@ -230,9 +230,10 @@ style.innerHTML = `
 
     }
 
-    .p1 i{
+    .p1{
         display:inline;
         text-align:right;
+        float:right;
     }
     
     .snapshot {
