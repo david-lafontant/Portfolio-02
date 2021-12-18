@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /* eslint-disable func-style */
 /* eslint-disable arrow-parens */
 const projectBtn = document.querySelectorAll('.myButton');
@@ -21,12 +22,18 @@ remaining essent
 
 
 const paragraph2 = `<p class="cardP sec-a" id="bp">
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam 
-est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius 
-modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
+Sed ut perspiciatis unde omnis iste natus error
+ sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore
+ veritatis et quasi architecto beatae vitae 
+dicta sunt explicabo. Nemo enim ipsam voluptatem 
+quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione
+ voluptatem sequi nesciunt. Neque porro quisquam 
+est, qui dolorem ipsum quia dolor sit amet, 
+consectetur, adipisci velit, sed quia non numquam eius 
+modi tempora incidunt ut labore et dolore 
+magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, 
  </p>`;
 
 const sources = "https://github.com/david-lafontant/Portfolio";
@@ -39,7 +46,6 @@ const canopy = [];
 const web = document.getElementsByClassName('cardUl2');
 
 const style = document.createElement('style');
-const style2 = document.createElement('style');
 const myImages = document.getElementsByClassName('responsiveImg');
 const imageContent = [];
 
@@ -71,11 +77,11 @@ for (let num = 0; num < web.length; num += 1){
 
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = {
-"theHead": headingContent[num],
+    "lieLink": lives,
+    "sourceLink": sources,
 "theCanopy": canopy[num],
-"theImage": imageContent[num],
-"sourceLink": sources,
-"lieLink": lives
+"theHead": headingContent[num],
+"theImage": imageContent[num]
   };
 
 popup.push(item);
@@ -101,8 +107,12 @@ ${webLanguages[num]}
 <li class="card-li">Bootstrap</li>
 </ul>
   <div class="flexButton sec-d">
-    <a class="myButton modalButton" href =" ${lives}" target="_blank"><span>See Live </span> <img src="images/Icon.svg" > </a>
-    <a class="myButton modalButton" href = "${sources}" target="_blank"><span>See Source </span>  <i class="fab fa-github"></i></a>
+    <a class="myButton modalButton"
+     href =" ${lives}" target="_blank"><span>See Live 
+     </span> <img src="images/Icon.svg" > </a>
+    <a class="myButton modalButton" 
+    href = "${sources}" target="_blank">
+    <span>See Source </span>  <i class="fab fa-github"></i></a>
   </div>
 </section>
 </section>
@@ -250,8 +260,8 @@ style.innerHTML = `
         margin-top: 0.5rem;
         padding: 0;
     }
-	
-	#otherTechno {display: none;}
+  
+    #otherTechno {display: none;}
     #bp{display:none;}
     .cardUl1 {
         display: flex;
