@@ -282,7 +282,6 @@ style.innerHTML = `
         margin-bottom: 1.1rem;
         list-style-type: none;
     }
-
     .flexButton{
     display: flex;padding: 0.1em 0.3em;
     justify-content: space-around;}
