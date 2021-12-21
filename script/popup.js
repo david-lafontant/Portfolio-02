@@ -2,13 +2,9 @@
 /* eslint-disable func-style */
 /* eslint-disable arrow-parens */
 const projectBtn = document.querySelectorAll('.myButton');
-
 const myHeadings = document.getElementsByClassName('cardH2');
-
 const headingContent = [];
-
 const webLanguages = [];
-
 const popup = [];
 
 const paragraph = `  <p class="cardP sec-a" id="lp">
@@ -19,7 +15,6 @@ and scrambled it to make a type specimen book. It has survived not
 only five centuries, but also the leap into electronic typesetting,
 remaining essent
 </p>`;
-
 
 const paragraph2 = `<p class="cardP sec-a" id="bp">
 Sed ut perspiciatis unde omnis iste natus error
@@ -44,11 +39,9 @@ const sources = "https://github.com/david-lafontant/Portfolio";
 const lives = "https://david-lafontant.github.io/Portfolio/";
 
 const closeSign = `<p class="p1"><i class="fas fa-times closePopup"></i></p>`;
-
 const myCanopy = document.querySelectorAll('.cardUl1');
 const canopy = [];
 const web = document.getElementsByClassName('cardUl2');
-
 const style = document.createElement('style');
 const myImages = document.getElementsByClassName('responsiveImg');
 const imageContent = [];
@@ -59,26 +52,22 @@ for (let num = 0; num < myHeadings.length; num += 1){
 
   headingContent.push(item);
 }
-
 for (let num = 0; num < myImages.length; num += 1){
   const item = `<img src=${myImages[num].src} 
   class="responsiveImg" alt="project image">`;
 
   imageContent.push(item);
 }
-
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = `<ul class="cardUl1">${myCanopy[num].innerHTML}</ul>`;
 
   canopy.push(item);
 }
-
 for (let num = 0; num < web.length; num += 1){
   const item = `<ul class="cardUl2 sec-b">${web[num].innerHTML}</ul>`;
 
   webLanguages.push(item);
 }
-
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = {
     "lieLink": lives,
@@ -122,40 +111,60 @@ ${webtech};
 function closePopup(){
   const closed = document.querySelector('.closePopup');
 
-  closed.addEventListener('click', async);
+  closed.addEventListener('click', ferme)
 
 }
 
+function ferme(){
 
-function async(){
-  window.location.reload();
+const toDelete = document.querySelector('#overlay');
+
+// eslint-disable-next-line no-unused-vars
+const toremoved = document.body.removeChild(toDelete);
 
 }
+
 // eslint-disable-next-line no-plusplus
 for (let num = 0; num < projectBtn.length; num += 1) {
   projectBtn[num].addEventListener('click', () => {
-    document.body.innerHTML = popupTemplate(num);
+    const popupOverlay = document.createElement('div');
+
+    popupOverlay.setAttribute('id', 'overlay');
+    popupOverlay.innerHTML = popupTemplate(num);
+    document.body.appendChild(popupOverlay);
     closePopup();
   });
 }
 
-
 style.innerHTML = `
+#overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: rgba(0, 0 , 0, 0.5);
+  height:100vh;
+  z-index:1000000;
+  min-height: 100%;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {display:none;}
 
 @media screen and (min-width: 992px){
     #modalPage{
         display:flex;
     flex-direction:column;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
     gap:0.5rem;
     padding-left:4%;
     padding-right:4%;
     }
-
     .p1 i{
         display:inline;
         text-align:right;
     }
-
     #modalPage >#card-detail-1{
         margin:0;
         padding:0;
@@ -164,12 +173,10 @@ style.innerHTML = `
     #modalPage >#card-detail-1 .p1{
         text-align:right;
     }
-
     #modalPage >#card-detail-1 #h2Modal{
         margin:0;
         padding:0;
     }
-
     #modalPage #poster {
         width: 100%;
         height: 39.8%;
@@ -177,7 +184,6 @@ style.innerHTML = `
         margin-left: auto;
         margin-bottom:3rem;
     }
-
     #modalPage #lp{
         display:none;
     }
@@ -219,10 +225,8 @@ style.innerHTML = `
             padding: 1rem;
             marging: 1rem;
         }
-    
-    }
+        }
  
-
 @media screen and (max-width: 991px) {
     
     .cardPages{
@@ -283,9 +287,6 @@ style.innerHTML = `
     }
 
     }
- 
-
 `;
-
 
 document.head.appendChild(style);
