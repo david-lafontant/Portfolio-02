@@ -5,8 +5,6 @@ const projectBtn = document.querySelectorAll('.myButton');
 const myHeadings = document.getElementsByClassName('cardH2');
 const headingContent = [];
 const webLanguages = [];
-const popup = [];
-
 const paragraph = `  <p class="cardP sec-a" id="lp">
 Lorem Ipsum is simply dummy text of the printing and typesetting
 industry. Lorem Ipsum has been the industry's standard dummy text
@@ -15,7 +13,6 @@ and scrambled it to make a type specimen book. It has survived not
 only five centuries, but also the leap into electronic typesetting,
 remaining essent
 </p>`;
-
 const paragraph2 = `<p class="cardP sec-a" id="bp">
 Sed ut perspiciatis unde omnis iste natus error
  sit voluptatem accusantium doloremque laudantium, 
@@ -37,7 +34,6 @@ const webtech = `<ul id="otherTechno" class="cardUl2 sec-c">
 </ul>`;
 const sources = "https://github.com/david-lafontant/Portfolio";
 const lives = "https://david-lafontant.github.io/Portfolio/";
-
 const closeSign = `<p class="p1"><i class="fas fa-times closePopup"></i></p>`;
 const myCanopy = document.querySelectorAll('.cardUl1');
 const canopy = [];
@@ -68,7 +64,10 @@ for (let num = 0; num < web.length; num += 1){
 
   webLanguages.push(item);
 }
-// Populate popup array with object created from variable;
+// Create popup array
+const popup = [];
+
+// Populate popup array with objects
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = {
     "closedBtn": closeSign,
