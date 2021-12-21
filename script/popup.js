@@ -71,17 +71,15 @@ const popup = [];
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = {
     "closedBtn": closeSign,
-    "languages": webLanguages[num],
-
-    "liveLink": lives,
-    "paragraph_1": paragraph,
-    "paragraph_2": paragraph2,
-    "sourceLink": sources,
-"theCanopy": canopy[num],
-"theHead": headingContent[num],
-"theImage": imageContent[num],
-"webdev": webtech
-
+    "description_1": paragraph,
+    "description_2": paragraph2,
+    "featured_image": imageContent[num],
+    "link_to_live": lives,
+    "link_to_source": sources,
+    "name": headingContent[num],
+    "technologies": webLanguages[num],
+    "theCanopy": canopy[num],
+    "webdev": webtech
   };
 
 popup.push(item);
@@ -91,23 +89,23 @@ popup.push(item);
 const popupTemplate = (num) => `<section class="cardPages" id="modalPage">
 <section class="card-details" id="card-detail-1">
   ${popup[num].closedBtn}
-  ${popup[num].theHead}
+  ${popup[num].name}
   ${popup[num].theCanopy}
 </section>
 <section class="snapshot" id="poster">
-${popup[num].theImage}
+${popup[num].featured_image}
 </section>
 <section class="card-details card-grid" id="card-detail-2">
-${popup[num].paragraph_1}
-${popup[num].paragraph_2}
-${popup[num].languages}
+${popup[num].description_1}
+${popup[num].description_2}
+${popup[num].technologies}
 ${popup[num].webdev}
   <div class="flexButton sec-d">
     <a class="myButton modalButton"
-     href =" ${popup[num].liveLink}" target="_blank"><span>See Live 
+     href =" ${popup[num].link_to_live}" target="_blank"><span>See Live 
      </span> <img src="images/Icon.svg" > </a>
     <a class="myButton modalButton" 
-    href = "${popup[num].sourceLink}" target="_blank">
+    href = "${popup[num].link_to_source}" target="_blank">
     <span>See Source </span>  <i class="fab fa-github"></i></a>
   </div>
 </section>
