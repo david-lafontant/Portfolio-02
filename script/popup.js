@@ -68,13 +68,21 @@ for (let num = 0; num < web.length; num += 1){
 
   webLanguages.push(item);
 }
+// Populate popup array with object created from variable;
 for (let num = 0; num < myCanopy.length; num += 1){
   const item = {
-    "lieLink": lives,
+    "closedBtn": closeSign,
+    "languages": webLanguages[num],
+
+    "liveLink": lives,
+    "paragraph_1": paragraph,
+    "paragraph_2": paragraph2,
     "sourceLink": sources,
 "theCanopy": canopy[num],
 "theHead": headingContent[num],
-"theImage": imageContent[num]
+"theImage": imageContent[num],
+"webdev": webtech
+
   };
 
 popup.push(item);
@@ -83,7 +91,7 @@ popup.push(item);
 // eslint-disable-next-line no-unused-vars
 const popupTemplate = (num) => `<section class="cardPages" id="modalPage">
 <section class="card-details" id="card-detail-1">
-  ${closeSign}
+  ${popup[num].closedBtn}
   ${popup[num].theHead}
   ${popup[num].theCanopy}
 </section>
@@ -91,16 +99,16 @@ const popupTemplate = (num) => `<section class="cardPages" id="modalPage">
 ${popup[num].theImage}
 </section>
 <section class="card-details card-grid" id="card-detail-2">
-${paragraph}
-${paragraph2}
-${webLanguages[num]}
-${webtech};
+${popup[num].paragraph_1}
+${popup[num].paragraph_2}
+${popup[num].languages}
+${popup[num].webdev}
   <div class="flexButton sec-d">
     <a class="myButton modalButton"
-     href =" ${lives}" target="_blank"><span>See Live 
+     href =" ${popup[num].liveLink}" target="_blank"><span>See Live 
      </span> <img src="images/Icon.svg" > </a>
     <a class="myButton modalButton" 
-    href = "${sources}" target="_blank">
+    href = "${popup[num].sourceLink}" target="_blank">
     <span>See Source </span>  <i class="fab fa-github"></i></a>
   </div>
 </section>
@@ -164,6 +172,7 @@ style.innerHTML = `
     .p1 i{
         display:inline;
         text-align:right;
+        cursor:pointer;
     }
     #modalPage >#card-detail-1{
         margin:0;
@@ -233,20 +242,19 @@ style.innerHTML = `
         justify-content:center;
 
     }
-
     .p1{
         display:inline;
         text-align:right;
         float:right;
+
     }
-    
+    .p1 i{        cursor:pointer; }
     .snapshot {
         width: 100%;
         height: 39.8%;
         margin-right: auto;
         margin-left: auto;
     }
-      
     .responsiveImg {
         max-width: 100%;
         max-height: auto;
