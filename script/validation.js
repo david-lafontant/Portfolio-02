@@ -60,6 +60,7 @@ const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format - lowercase required";
 
 
+// eslint-disable-next-line max-statements
 form.addEventListener('submit', event => {
     // Stop form submission
     event.preventDefault();
