@@ -8,15 +8,16 @@ const msg = document.querySelector('.message-input');
 // Show a message with a type of the input
 function showMessage(input, message, type) {
     // Get the small element and set the message
-    const msg = input.parentNode.querySelector("small");
+    const msg1 = input.parentNode.querySelector("small");
 
-    msg.innerText = message;
+    msg1.innerText = message;
 if (type) {
     input.className = "success";
 } else {
     input.className = "error";
 }
-     return type;
+
+return type;
 }
 
 
@@ -45,9 +46,9 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     const emailRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
-    const email = input.value.trim();
+    const email1 = input.value.trim();
 
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(email1)) {
         return showError(input, invalidMsg);
     }
 
@@ -72,23 +73,26 @@ form.addEventListener('submit', event => {
       form.submit();
     }
 
-    // local storage
+    // Local storage
     const nametext = nameInput.value.trim();
     const emailtext = email.value.trim();
     const msgtext = msg.value.trim();
 
-    if(!nametext || !emailtext || !msgtext){
+    if (!nametext || !emailtext || !msgtext){
         return;
     }
     const userData = {
-        name: nametext,
-        email: emailtext,
-        message: msgtext
+
+        "email": emailtext,
+        "message": msgtext,
+        "name": nametext
     }
+
     localStorage.setItem('data', JSON.stringify(userData));
   });
 
    const userInfo = JSON.parse(localStorage.getItem("data"));
+
 if (userInfo) {
   nameInput.value = userInfo.name;
   email.value = userInfo.email;
