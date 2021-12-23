@@ -1,4 +1,10 @@
 /* eslint-disable max-len */
+const form = document.querySelector(".form-element");
+const nameInput = document.querySelector('.name-input')
+const email = document.querySelector('.email-input')
+const msg = document.querySelector('.message-input');
+
+
 // Show a message with a type of the input
 function showMessage(input, message, type) {
     // Get the small element and set the message
@@ -10,8 +16,6 @@ if (type) {
 } else {
     input.className = "error";
 }
-
-
      return type;
 }
 
@@ -45,15 +49,10 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
     if (!emailRegex.test(email)) {
         return showError(input, invalidMsg);
-
-
     }
-
 
 return true;
 }
-
-const form = document.querySelector("form");
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
@@ -70,7 +69,28 @@ form.addEventListener('submit', event => {
     // If valid, submit the form.
 
     if (nameValid && emailValid) {
-    console.log('form event submit')
       form.submit();
     }
+
+    // local storage
+    const nametext = nameInput.value.trim();
+    const emailtext = email.value.trim();
+    const msgtext = msg.value.trim();
+
+    if(!nametext || !emailtext || !msgtext){
+        return;
+    }
+    const userData = {
+        name: nametext,
+        email: emailtext,
+        message: msgtext
+    }
+    localStorage.setItem('data', JSON.stringify(userData));
   });
+
+   const userInfo = JSON.parse(localStorage.getItem("data"));
+if (userInfo) {
+  nameInput.value = userInfo.name;
+  email.value = userInfo.email;
+  msg.value = userInfo.message;
+}

@@ -17,5 +17,3 @@ function show(){
 function hide(){
   menu.style.top = "-100%";
 }
-
-console.log(menuLinks);
