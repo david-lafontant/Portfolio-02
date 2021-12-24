@@ -203,40 +203,16 @@
           </p>
         </section>
         <section class="form-page-section">
-          <form
-            class="form-element"
-            action="https://formspree.io/f/meqnjrqo"
-            method="POST"
-          >
-            <label for="user-name"></label>
-            <input
-              type="text"
-              name="user-name"
-              class="input-field text-input"
-              placeholder="Please enter your name"
-              id="user-name"
-              maxlength="30"
-              required
-            />
-            <label for="user-email"></label>
-            <input
-              type="email"
-              name="-replyto"
-              id="user-email"
-              class="input-field text-input"
-              placeholder="Please enter your email"
-              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-              required
-            />
+          <form class="form-element" action="https://formspree.io/f/meqnjrqo" method="POST" id="form">
+            <label for="name"></label>
+            <input type="text" name="name" class="input-field text-input" placeholder="Please enter your name" id="name" maxlength="30" required/>
+            <label for="email"></label>
+            <input type="email" name="-replyto" id="email" class="input-field text-input" placeholder="Please enter your email"/>
             <label for="msg"></label>
-            <textarea
-              class="input-field text-input"
-              id="msg"
-              name="user-message"
-              maxlength="500"
-              required
-            ></textarea>
-            <button class="myButton form-page-button">Get in touch</button>
+            <textarea class="input-field text-input" id="msg" name="user-message" maxlength="500" required></textarea>
+            <button type="submit" class="myButton form-page-button">Get in touch</button>
+            <small></small>
+
           </form>
         </section>
       </section>
@@ -246,5 +222,8 @@
     <!-- menu script -->
     <script src="script/menu-script.js"></script>
     <script src="script/popup.js"></script>
+    <!-- popup script -->
+    <script src="script/validation.js"></script>
+
   </body>
 </html>
