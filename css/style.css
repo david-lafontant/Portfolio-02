@@ -602,7 +602,7 @@ small {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "position-a position-b";
-    gap:2rem;
+    gap: 2rem;
     padding-right: 1.2rem;
     padding-left: 1.2rem;
   }
