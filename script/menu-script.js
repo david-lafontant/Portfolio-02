@@ -10,7 +10,7 @@ menuLinks.forEach(item => {
 });
 
 function showNavbar(){
-  menu.style.display = "flex";
+  menu.style.display = "block";
   menu.style.top = "0";
 }
 
