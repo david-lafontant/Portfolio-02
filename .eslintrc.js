@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 2015,
+        "ecmaVersion": 2016,
         "sourceType": "module"
     },
     "rules": {
@@ -15,18 +15,6 @@ module.exports = {
         "array-bracket-spacing": "error",
         "array-callback-return": "error",
         "array-element-newline": "error",
-        "arrow-body-style": "error",
-        "arrow-parens": [
-            "error",
-            "as-needed"
-        ],
-        "arrow-spacing": [
-            "error",
-            {
-                "after": true,
-                "before": true
-            }
-        ],
         "block-scoped-var": "error",
         "block-spacing": "error",
         "brace-style": "error",
@@ -92,11 +80,11 @@ module.exports = {
         "max-classes-per-file": "error",
         "max-depth": "error",
         "max-len": "error",
-        "max-lines": "error",
-        "max-lines-per-function": "error",
+        "max-lines": 0,
+        "max-lines-per-function": 0,
         "max-nested-callbacks": "error",
         "max-params": "error",
-        "max-statements": "error",
+        "max-statements": 0,
         "max-statements-per-line": "error",
         "multiline-comment-style": "error",
         "multiline-ternary": "error",
@@ -188,6 +176,7 @@ module.exports = {
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",
+        "no-unused-vars": "off",
         "no-use-before-define": "off",
         "no-useless-call": "error",
         "no-useless-computed-key": "error",
