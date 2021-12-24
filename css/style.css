@@ -602,6 +602,9 @@ small {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "position-a position-b";
+    gap:2rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
   }
 
   .card-details {
@@ -678,6 +681,7 @@ small {
     gap: 0.5rem;
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 2rem;
   }
 
   .p1 i {
@@ -758,6 +762,7 @@ small {
 @media screen and (max-width: 991px) {
   .cardPages {
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .p1 {
