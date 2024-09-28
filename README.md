@@ -35,7 +35,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://david-lafontant.github.io/Portfolio/)
+[Live Demo Link](https://david-lafontant.github.io/Portfolio-02/)
 
 ## Getting Started
 
@@ -72,17 +72,17 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to :
   The authors/contributors of the Microverse README.md template:
-  @nidalaa nidalaa Emilia Andrzejewska
-  @davidauza-engineer davidauza-engineer David Auza
-  @kethinov kethinov Eric Newport
-  @fernandorpm fernandorpm Fernando Marques
+  * @nidalaa nidalaa Emilia Andrzejewska
+  * @davidauza-engineer davidauza-engineer David Auza
+  * @kethinov kethinov Eric Newport
+  * @fernandorpm fernandorpm Fernando Marques
 
 - Hat tip also to my learning partner:
-  @andres-condezo ANdres Condozo who help me handle Figma
-  @Bondok6 Kyrillos Hany for his availability
-  @mukhammadrizooff for his help with the animation
-  @sumairq for his help
-  @eduardosancho for all his contribution during the fourth week of th first module
+  * @andres-condezo ANdres Condozo who help me handle Figma
+  * @Bondok6 Kyrillos Hany for his availability
+  * @mukhammadrizooff for his help with the animation
+  * @sumairq for his help
+  * @eduardosancho for all his contribution during the fourth week of the first module
 
 ## 📝 License
 
