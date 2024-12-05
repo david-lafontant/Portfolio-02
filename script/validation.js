@@ -1,18 +1,23 @@
 /* eslint-disable max-len */
+const form = document.querySelector(".form-element");
+const nameInput = document.querySelector('.name-input')
+const email = document.querySelector('.email-input')
+const msg = document.querySelector('.message-input');
+
+
 // Show a message with a type of the input
 function showMessage(input, message, type) {
     // Get the small element and set the message
-    const msg = input.parentNode.querySelector("small");
+    const msg1 = input.parentNode.querySelector("small");
 
-    msg.innerText = message;
+    msg1.innerText = message;
 if (type) {
     input.className = "success";
 } else {
     input.className = "error";
 }
 
-
-     return type;
+return type;
 }
 
 
@@ -41,25 +46,21 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     const emailRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
-    const email = input.value.trim();
+    const email1 = input.value.trim();
 
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(email1)) {
         return showError(input, invalidMsg);
-
-
     }
-
 
 return true;
 }
-
-const form = document.querySelector("form");
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format - lowercase required";
 
 
+// eslint-disable-next-line max-statements
 form.addEventListener('submit', event => {
     // Stop form submission
     event.preventDefault();
@@ -70,7 +71,31 @@ form.addEventListener('submit', event => {
     // If valid, submit the form.
 
     if (nameValid && emailValid) {
-    console.log('form event submit')
       form.submit();
     }
+
+    // Local storage
+    const nametext = nameInput.value.trim();
+    const emailtext = email.value.trim();
+    const msgtext = msg.value.trim();
+
+    if (!nametext || !emailtext || !msgtext){
+        return;
+    }
+    const userData = {
+
+        "email": emailtext,
+        "message": msgtext,
+        "name": nametext
+    }
+
+    localStorage.setItem('data', JSON.stringify(userData));
   });
+
+   const userInfo = JSON.parse(localStorage.getItem("data"));
+
+if (userInfo) {
+  nameInput.value = userInfo.name;
+  email.value = userInfo.email;
+  msg.value = userInfo.message;
+}
